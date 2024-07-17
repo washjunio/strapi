@@ -1,17 +1,19 @@
 {
   "kind": "collectionType",
-  "collectionName": "kw_16s",
+  "collectionName": "rl_90s",
   "info": {
-    "singularName": "kw-16",
-    "pluralName": "kw-16s",
-    "displayName": "KW",
-    "description": ""
+    "singularName": "rl-90",
+    "pluralName": "rl-90s",
+    "displayName": "RL90"
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
+    "title": {
+      "type": "string"
+    },
     "content": {
       "type": "customField",
       "options": {
@@ -19,10 +21,6 @@
         "preset": "rich"
       },
       "customField": "plugin::ckeditor.CKEditor"
-    },
-    "title": {
-      "type": "string",
-      "required": true
     }
   }
 }
