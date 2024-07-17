@@ -1,6 +1,6 @@
 module.exports = ({ env }) => ({
-  host: env('HOST', '0.0.0.0'),
-  port: env.int('PORT', 1337),
+  host: env('HOST', '0.0.0.0'), // Use '0.0.0.0' para permitir que o Azure defina o host
+  port: env.int('PORT', process.env.PORT), // Use process.env.PORT sem valor padrão
   app: {
     keys: env.array('APP_KEYS'),
   },
